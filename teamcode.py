@@ -2,7 +2,6 @@ from ultralytics import YOLO
 import cv2
 import numpy as np
 
-
 def count_people(image_path):
     model = YOLO('yolov8n.pt') 
     
@@ -35,6 +34,5 @@ try:
     cv2.imshow("Original Photo 2", image2)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-
 except Exception as e:
     print(f"오류 발생: {e}")
